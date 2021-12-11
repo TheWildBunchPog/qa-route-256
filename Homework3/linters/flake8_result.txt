@@ -1,0 +1,19 @@
+/home/a-vdovin/gitlab/qa-route-256/Homework3/linters/bad_file.py:1:1: F401 'collections.namedtuple' imported but unused
+/home/a-vdovin/gitlab/qa-route-256/Homework3/linters/bad_file.py:6:1: E302 expected 2 blank lines, found 1
+/home/a-vdovin/gitlab/qa-route-256/Homework3/linters/bad_file.py:10:1: E305 expected 2 blank lines after class or function definition, found 1
+/home/a-vdovin/gitlab/qa-route-256/Homework3/linters/bad_file.py:10:1: E402 module level import not at top of file
+/home/a-vdovin/gitlab/qa-route-256/Homework3/linters/bad_file.py:11:1: E302 expected 2 blank lines, found 0
+/home/a-vdovin/gitlab/qa-route-256/Homework3/linters/bad_file.py:11:4: E271 multiple spaces after keyword
+/home/a-vdovin/gitlab/qa-route-256/Homework3/linters/bad_file.py:11:14: E211 whitespace before '('
+/home/a-vdovin/gitlab/qa-route-256/Homework3/linters/bad_file.py:11:22: E202 whitespace before ')'
+/home/a-vdovin/gitlab/qa-route-256/Homework3/linters/bad_file.py:12:1: W191 indentation contains tabs
+/home/a-vdovin/gitlab/qa-route-256/Homework3/linters/bad_file.py:12:1: E101 indentation contains mixed spaces and tabs
+/home/a-vdovin/gitlab/qa-route-256/Homework3/linters/bad_file.py:12:2: E117 over-indented
+/home/a-vdovin/gitlab/qa-route-256/Homework3/linters/bad_file.py:12:25: E202 whitespace before ')'
+/home/a-vdovin/gitlab/qa-route-256/Homework3/linters/bad_file.py:14:1: E305 expected 2 blank lines after class or function definition, found 1
+/home/a-vdovin/gitlab/qa-route-256/Homework3/linters/bad_file.py:16:15: E225 missing whitespace around operator
+/home/a-vdovin/gitlab/qa-route-256/Homework3/linters/bad_file.py:19:5: E722 do not use bare 'except'
+/home/a-vdovin/gitlab/qa-route-256/Homework3/linters/bad_file.py:23:6: E111 indentation is not a multiple of 4
+/home/a-vdovin/gitlab/qa-route-256/Homework3/linters/bad_file.py:23:6: E117 over-indented
+/home/a-vdovin/gitlab/qa-route-256/Homework3/linters/bad_file.py:23:26: E231 missing whitespace after ','
+/home/a-vdovin/gitlab/qa-route-256/Homework3/linters/bad_file.py:23:32: W292 no newline at end of file

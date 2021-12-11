@@ -1,0 +1,90 @@
+1. Список методов сервиса
+
+grpc.gateway.testing.EchoService
+
+2. Описание методов Echo и ServerStreamingEcho
+
+	2.1 Описание метода Echo
+
+	grpc.gateway.testing.EchoService.Echo is a method:
+	// One request followed by one response
+	// The server returns the client message as-is.
+	rpc Echo ( .grpc.gateway.testing.EchoRequest ) returns ( .grpc.gateway.testing.EchoResponse );
+
+	2.2 Описание запроса Echo
+
+	grpc.gateway.testing.EchoRequest is a message:
+	message EchoRequest {
+	  string message = 1;
+	}
+
+	2.3 Описание ответа Echo
+
+	gpc.gateway.testing.EchoResponse is a message:
+	message EchoResponse {
+	  string message = 1;
+	  int32 message_count = 2;
+	}
+
+	2.4 Описание метода ServerStreamingEcho
+
+	grpc.gateway.testing.EchoService.ServerStreamingEcho is a method:
+	// One request followed by a sequence of responses (streamed download).
+	// The server will return the same client message repeatedly.
+	rpc ServerStreamingEcho ( .grpc.gateway.testing.ServerStreamingEchoRequest ) returns ( stream .grpc.gateway.testing.ServerStreamingEchoResponse );
+
+	2.5 Описание запроса ServerStreamingEcho
+
+	grpc.gateway.testing.ServerStreamingEchoRequest is a message:
+	// Request type for server side streaming echo.
+	message ServerStreamingEchoRequest {
+	  // Message string for server streaming request.
+	  string message = 1;
+	  // The total number of messages to be generated before the server
+	  // closes the stream; default is 10.
+	  int32 message_count = 2;
+	  // The interval (ms) between two server messages. The server implementation
+	  // may enforce some minimum interval (e.g. 100ms) to avoid message overflow.
+	  int32 message_interval = 3;
+	}
+
+	2.6 Описание ответа ServerStreamingEcho
+
+	grpc.gateway.testing.ServerStreamingEchoResponse is a message:
+	// Response type for server streaming response.
+	message ServerStreamingEchoResponse {
+	  // Response message.
+	  string message = 1;
+	}
+
+3. Запрос метода Echo
+
+Запрос: ./grpcurl -import-path /home/a-vdovin/gitlab/qa-route-256/Homework10 -proto echo.proto -d '{"message":"test_echo"}' -plaintext localhost:9090 grpc.gateway.testing.EchoService.Echo | jq
+
+Ответ:
+
+{
+  "message": "test_echo"
+}
+
+3. Запрос метода ServerStreamingEcho
+
+Запрос: ./grpcurl -import-path /home/a-vdovin/gitlab/qa-route-256/Homework10 -proto echo.proto -d '{"message":"test_server_streaming_echo", "message_count":5}' -plaintext localhost:9090 grpc.gateway.testing.EchoService.ServerStreamingEcho | jq
+
+Ответ:
+
+{
+  "message": "test_server_streaming_echo"
+}
+{
+  "message": "test_server_streaming_echo"
+}
+{
+  "message": "test_server_streaming_echo"
+}
+{
+  "message": "test_server_streaming_echo"
+}
+{
+  "message": "test_server_streaming_echo"
+}

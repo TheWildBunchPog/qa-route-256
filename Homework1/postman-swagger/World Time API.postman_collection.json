@@ -1,0 +1,1008 @@
+{
+	"info": {
+		"_postman_id": "c11021e6-04ab-4578-aa16-cb6293b09718",
+		"name": "World Time API",
+		"description": "A simple API to get the current time based on a request with a timezone.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "timezone",
+			"item": [
+				{
+					"name": "{area}",
+					"item": [
+						{
+							"name": "{location}",
+							"item": [
+								{
+									"name": "request the current time for a timezone.",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/timezone/{{area}}/{{location}}",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"timezone",
+												"{{area}}",
+												"{{location}}"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "the current time for the timezone requested in JSON format",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/timezone/:area/:location",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"timezone",
+														":area",
+														":location"
+													],
+													"variable": [
+														{
+															"key": "area"
+														},
+														{
+															"key": "location"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"abbreviation\": \"ut nostrud velit tempor\",\n \"client_ip\": \"eiusmod officia sed\",\n \"datetime\": \"minim et occaecat ut\",\n \"day_of_week\": -25924796,\n \"day_of_year\": 10115424,\n \"dst\": true,\n \"dst_offset\": 20042238,\n \"timezone\": \"voluptate aliqua\",\n \"unixtime\": -52197865,\n \"utc_datetime\": \"occaecat veniam nostrud commodo minim\",\n \"utc_offset\": \"Excepteur ut amet eu aliqua\",\n \"week_number\": -64544079,\n \"dst_from\": \"aliquip qui nulla sed\",\n \"dst_until\": \"id minim et amet\",\n \"raw_offset\": -35715189\n}"
+										},
+										{
+											"name": "an error response in JSON format",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/timezone/:area/:location",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"timezone",
+														":area",
+														":location"
+													],
+													"variable": [
+														{
+															"key": "area"
+														},
+														{
+															"key": "location"
+														}
+													]
+												}
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"error\": \"ipsum\"\n}"
+										}
+									]
+								},
+								{
+									"name": "request the current time for a timezone.",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/timezone/{{area}}/{{location}}/{{region}}",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"timezone",
+												"{{area}}",
+												"{{location}}",
+												"{{region}}"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "the current time for the timezone requested in JSON format",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/timezone/:area/:location/:region",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"timezone",
+														":area",
+														":location",
+														":region"
+													],
+													"variable": [
+														{
+															"key": "area"
+														},
+														{
+															"key": "location"
+														},
+														{
+															"key": "region"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"abbreviation\": \"ut nostrud velit tempor\",\n \"client_ip\": \"eiusmod officia sed\",\n \"datetime\": \"minim et occaecat ut\",\n \"day_of_week\": -25924796,\n \"day_of_year\": 10115424,\n \"dst\": true,\n \"dst_offset\": 20042238,\n \"timezone\": \"voluptate aliqua\",\n \"unixtime\": -52197865,\n \"utc_datetime\": \"occaecat veniam nostrud commodo minim\",\n \"utc_offset\": \"Excepteur ut amet eu aliqua\",\n \"week_number\": -64544079,\n \"dst_from\": \"aliquip qui nulla sed\",\n \"dst_until\": \"id minim et amet\",\n \"raw_offset\": -35715189\n}"
+										},
+										{
+											"name": "an error response in JSON format",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/timezone/:area/:location/:region",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"timezone",
+														":area",
+														":location",
+														":region"
+													],
+													"variable": [
+														{
+															"key": "area"
+														},
+														{
+															"key": "location"
+														},
+														{
+															"key": "region"
+														}
+													]
+												}
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"error\": \"ipsum\"\n}"
+										}
+									]
+								},
+								{
+									"name": "request the current time for a timezone.",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/timezone/{{area}}/{{location}}/{{region}}.txt",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"timezone",
+												"{{area}}",
+												"{{location}}",
+												"{{region}}.txt"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "the current time for the timezone requested in plain text",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/timezone/:area/:location/{{region}}.txt",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"timezone",
+														":area",
+														":location",
+														"{{region}}.txt"
+													],
+													"variable": [
+														{
+															"key": "area"
+														},
+														{
+															"key": "location"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": "Lorem officia veniam velit"
+										},
+										{
+											"name": "an error response in plain text",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/timezone/:area/:location/{{region}}.txt",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"timezone",
+														":area",
+														":location",
+														"{{region}}.txt"
+													],
+													"variable": [
+														{
+															"key": "area"
+														},
+														{
+															"key": "location"
+														}
+													]
+												}
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": "tempor in Excepteur"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "a listing of all timezones available for that area.",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/timezone/{{area}}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"timezone",
+										"{{area}}"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "the list of available timezones in JSON format",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/timezone/:area",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"timezone",
+												":area"
+											],
+											"variable": [
+												{
+													"key": "area"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n \"\",\n \"ex eiusmod aliqua ipsum\"\n]"
+								},
+								{
+									"name": "an error response in JSON format",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/timezone/:area",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"timezone",
+												":area"
+											],
+											"variable": [
+												{
+													"key": "area"
+												}
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"error\": \"ipsum\"\n}"
+								}
+							]
+						},
+						{
+							"name": "request the current time for a timezone.",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/timezone/{{area}}/{{location}}.txt",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"timezone",
+										"{{area}}",
+										"{{location}}.txt"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "the current time for the timezone requested in plain text",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/timezone/:area/{{location}}.txt",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"timezone",
+												":area",
+												"{{location}}.txt"
+											],
+											"variable": [
+												{
+													"key": "area"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": "Lorem officia veniam velit"
+								},
+								{
+									"name": "an error response in plain text",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/timezone/:area/{{location}}.txt",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"timezone",
+												":area",
+												"{{location}}.txt"
+											],
+											"variable": [
+												{
+													"key": "area"
+												}
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": "tempor in Excepteur"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "a listing of all timezones.",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/timezone",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"timezone"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "the list of available timezones in JSON format",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/timezone",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"timezone"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n \"dolore laborum mollit\",\n \"in cillum i\"\n]"
+						}
+					]
+				},
+				{
+					"name": "a listing of all timezones available for that area.",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/timezone/{{area}}.txt",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"timezone",
+								"{{area}}.txt"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "the list of available timezones in plain text",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/timezone/{{area}}.txt",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"timezone",
+										"{{area}}.txt"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": "non proident eiusmod amet no"
+						},
+						{
+							"name": "an error response in plain text",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/timezone/{{area}}.txt",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"timezone",
+										"{{area}}.txt"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": "tempor in Excepteur"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "ip",
+			"item": [
+				{
+					"name": "request the current time based on the ip of the request. note: this is a \"best guess\" obtained from open-source data.",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/ip",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"ip"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "the current time for the timezone requested in JSON format",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/ip",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ip"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"abbreviation\": \"ut nostrud velit tempor\",\n \"client_ip\": \"eiusmod officia sed\",\n \"datetime\": \"minim et occaecat ut\",\n \"day_of_week\": -25924796,\n \"day_of_year\": 10115424,\n \"dst\": true,\n \"dst_offset\": 20042238,\n \"timezone\": \"voluptate aliqua\",\n \"unixtime\": -52197865,\n \"utc_datetime\": \"occaecat veniam nostrud commodo minim\",\n \"utc_offset\": \"Excepteur ut amet eu aliqua\",\n \"week_number\": -64544079,\n \"dst_from\": \"aliquip qui nulla sed\",\n \"dst_until\": \"id minim et amet\",\n \"raw_offset\": -35715189\n}"
+						},
+						{
+							"name": "an error response in JSON format",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/ip",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ip"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"error\": \"ipsum\"\n}"
+						}
+					]
+				},
+				{
+					"name": "request the current time based on the ip of the request. note: this is a \"best guess\" obtained from open-source data.",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/ip/{{ipv4}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"ip",
+								"{{ipv4}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "the current time for the timezone requested in JSON format",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/ip/:ipv4",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ip",
+										":ipv4"
+									],
+									"variable": [
+										{
+											"key": "ipv4"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"abbreviation\": \"ut nostrud velit tempor\",\n \"client_ip\": \"eiusmod officia sed\",\n \"datetime\": \"minim et occaecat ut\",\n \"day_of_week\": -25924796,\n \"day_of_year\": 10115424,\n \"dst\": true,\n \"dst_offset\": 20042238,\n \"timezone\": \"voluptate aliqua\",\n \"unixtime\": -52197865,\n \"utc_datetime\": \"occaecat veniam nostrud commodo minim\",\n \"utc_offset\": \"Excepteur ut amet eu aliqua\",\n \"week_number\": -64544079,\n \"dst_from\": \"aliquip qui nulla sed\",\n \"dst_until\": \"id minim et amet\",\n \"raw_offset\": -35715189\n}"
+						},
+						{
+							"name": "an error response in JSON format",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/ip/:ipv4",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ip",
+										":ipv4"
+									],
+									"variable": [
+										{
+											"key": "ipv4"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"error\": \"ipsum\"\n}"
+						}
+					]
+				},
+				{
+					"name": "request the current time based on the ip of the request. note: this is a \"best guess\" obtained from open-source data.",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/ip/{{ipv4}}.txt",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"ip",
+								"{{ipv4}}.txt"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "the current time for the timezone requested in plain text",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/ip/{{ipv4}}.txt",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ip",
+										"{{ipv4}}.txt"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": "Lorem officia veniam velit"
+						},
+						{
+							"name": "an error response in plain text",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/ip/{{ipv4}}.txt",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ip",
+										"{{ipv4}}.txt"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": "tempor in Excepteur"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "a listing of all timezones.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/timezone.txt",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"timezone.txt"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "the list of available timezones in plain text",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/timezone.txt",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"timezone.txt"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						}
+					],
+					"cookie": [],
+					"body": "non proident eiusmod amet no"
+				}
+			]
+		},
+		{
+			"name": "request the current time based on the ip of the request. note: this is a \"best guess\" obtained from open-source data.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/ip.txt",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"ip.txt"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "the current time for the timezone requested in plain text",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/ip.txt",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"ip.txt"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						}
+					],
+					"cookie": [],
+					"body": "Lorem officia veniam velit"
+				},
+				{
+					"name": "an error response in plain text",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/ip.txt",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"ip.txt"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						}
+					],
+					"cookie": [],
+					"body": "tempor in Excepteur"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://worldtimeapi.org/api/"
+		},
+		{
+			"key": "region",
+			"value": "Jujuy"
+		},
+		{
+			"key": "location",
+			"value": "Argentina"
+		},
+		{
+			"key": "area",
+			"value": "America"
+		},
+		{
+			"key": "ipv4",
+			"value": "194.186.207.157"
+		}
+	]
+}

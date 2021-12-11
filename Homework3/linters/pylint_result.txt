@@ -1,0 +1,20 @@
+************* Module bad_file
+bad_file.py:12:0: W0311: Bad indentation. Found 1 spaces, expected 4 (bad-indentation)
+bad_file.py:23:0: C0304: Final newline missing (missing-final-newline)
+bad_file.py:23:0: W0311: Bad indentation. Found 5 spaces, expected 4 (bad-indentation)
+bad_file.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+bad_file.py:6:15: W0622: Redefining built-in 'id' (redefined-builtin)
+bad_file.py:6:0: W0102: Dangerous default value [] as argument (dangerous-default-value)
+bad_file.py:6:0: C0103: Function name "AddElement" doesn't conform to snake_case naming style (invalid-name)
+bad_file.py:6:0: C0103: Argument name "id" doesn't conform to snake_case naming style (invalid-name)
+bad_file.py:6:0: C0116: Missing function or method docstring (missing-function-docstring)
+bad_file.py:10:0: C0413: Import "import math" should be placed at the top of the module (wrong-import-position)
+bad_file.py:11:0: C0103: Function name "MathSQRT" doesn't conform to snake_case naming style (invalid-name)
+bad_file.py:11:0: C0103: Argument name "Number" doesn't conform to snake_case naming style (invalid-name)
+bad_file.py:11:0: C0116: Missing function or method docstring (missing-function-docstring)
+bad_file.py:19:4: W0702: No exception type(s) specified (bare-except)
+bad_file.py:1:0: W0611: Unused namedtuple imported from collections (unused-import)
+
+------------------------------------------------------------------
+Your code has been rated at 1.18/10 (previous run: 1.18/10, +0.00)
+

@@ -1,0 +1,16 @@
+mode: set
+go-unit-test/unique.go:3.36,7.26 3 0
+go-unit-test/unique.go:13.2,13.13 1 0
+go-unit-test/unique.go:7.26,8.33 1 0
+go-unit-test/unique.go:8.33,11.4 2 0
+go-unit-test/unique.go:16.36,19.37 2 1
+go-unit-test/unique.go:31.2,31.13 1 1
+go-unit-test/unique.go:19.37,21.26 2 1
+go-unit-test/unique.go:27.3,27.14 1 1
+go-unit-test/unique.go:21.26,22.34 1 1
+go-unit-test/unique.go:22.34,24.10 2 1
+go-unit-test/unique.go:27.14,29.4 1 1
+go-unit-test/unique.go:34.36,37.33 3 0
+go-unit-test/unique.go:43.2,43.13 1 0
+go-unit-test/unique.go:37.33,38.38 1 0
+go-unit-test/unique.go:38.38,41.4 2 0

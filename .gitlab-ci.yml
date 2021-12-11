@@ -1,0 +1,103 @@
+image: gitlab.ozon.dev/qa/students/dependency_proxy/containers/golang:latest
+
+include:
+    - local: vars.yml
+    
+stages:
+  - build
+  - publish
+  - deploy
+  - e2e
+  - post-deploy
+  - close
+
+build:
+  stage: build
+  only:
+    - /^(feature|release|hotfix|master)/
+  script:
+    - echo "Build"
+
+unit:
+  stage: build
+  only:
+    - /^(release|test)/
+  script:
+    - echo "Unit testing"
+
+linter:
+  stage: build
+  only:
+    - /^(release|test)/
+  script:
+    - echo "Linter"
+
+create image:
+  stage: publish
+  only:
+    - /^(feature|release|hotfix|master)/
+  script:
+    - echo "Create image for dev/stg"
+
+release image:
+  stage: publish
+  only:
+    refs:
+      - /^([v]\d\.\d)/
+  script:
+    - echo "Create image for prod"
+
+development:
+  stage: deploy
+  when: manual
+  only:
+    - /^(feature|master)/
+  script:
+    - echo "Deploy to dev environment"
+
+staging:
+  stage: deploy
+  only:
+    - /^(release|hotfix)/
+  script:
+    - echo "Deploy to stg environment"
+
+staging latest:
+  stage: deploy
+  only:
+    - /^(master)/
+  script:
+    - echo "Update stg with last version"
+
+production:
+  stage: deploy
+  when: manual
+  only:
+    refs:
+      - /^([v]\d\.\d)/
+  script:
+    - echo "Deploy to prod environment"
+
+test:
+  stage: e2e
+  only:
+    - /^(release|test)/
+  script:
+    - echo "API testing on stg"
+
+ready to prod:
+  stage: close
+  only:
+    - /^(release|hotfix)/
+  when: manual
+  script:
+    - echo "Ready to prod"
+
+close release:
+  stage: close
+  when: manual
+  only:
+    refs:
+      - /^([v]\d\.\d)/
+  script:
+    - echo "Ready to prod"

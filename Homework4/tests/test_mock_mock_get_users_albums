@@ -1,0 +1,77 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.26.0
+    method: GET
+    uri: https://jsonplaceholder.typicode.com/users/5/albums
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA5WTS04DQQxE9zlFadYs+CT8bsAZEAvT7QhL/Zu2HSEh7o4mAUWZCDGsWu7FK3dV
+        9fMK+FgBwODK/SkOj9hcHC5kGtZX35OJJR4eMTBhV5M3I2NFJqmdFVwVFIIrFRPPqNutBBGFcW61
+        M3JNSUwIoRbl0cm8Dyvg8+LPFa7nKxgXNu/g95Yk0GsF00LWzZxFjbtQRqypds6jM4q8SVrIW895
+        Sk24GCN4RvE8Ov24cfJ27DihkLli9KpQ1yBNbKHu5jdP9jAmeIkMVgMXyQi1d28mGF0WKtzOFXJN
+        rCbEx/xRalmIuztfeCqGvLriSCZfasD9+XpRTgwOnhpNROwz0JrcCJSEFI27tikSE0Uij4faLtR+
+        mGu77XV23Cs6N49CJR6NUnhKlI8j2f+/webyrGocpzxxOEmhYogeJLse+rwnr16+AHhRliTmAwAA
+    headers:
+      CF-Cache-Status:
+      - MISS
+      CF-RAY:
+      - 6ab6d4bf7afc2169-DUS
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 09 Nov 2021 11:51:46 GMT
+      Expect-CT:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=rXxt03Toy17M6bUN%2FzYKoWXUMl8Iguw0JNv3arAypJToKce35YUd71DVEeer9LfYfCeDNYDgiGOFO4b85%2BRRdWiiyL61qHOXAMksbh7J1onjgrKKqGMlKQ6sJp9haJoA4GgBA5YT5KpSDQCTqI92"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-credentials:
+      - 'true'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+      cache-control:
+      - max-age=43200
+      etag:
+      - W/"3e6-etBE765LzW6L6vrIwp2oqMOf/FE"
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      vary:
+      - Origin, Accept-Encoding
+      via:
+      - 1.1 vegur
+      x-content-type-options:
+      - nosniff
+      x-powered-by:
+      - Express
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '999'
+      x-ratelimit-reset:
+      - '1636458765'
+    status:
+      code: 400
+      message: OK
+version: 1
